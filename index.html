@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cửa hàng Phú Hương</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #6dd5ed, #fceabb, #f8b195);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #phanChao {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+    }
+
+    .content {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 25px 35px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      max-width: 750px;
+      width: 90%;
+    }
+
+    .content h3 {
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+      color: #333;
+      border-bottom: 2px solid #f8b195;
+      padding-bottom: 8px;
+    }
+
+    .content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .content ul li {
+      margin: 10px 0;
+      font-size: 1.1rem;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    .content ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+
+    /* Sub list cho chi nhánh */
+    .content ul li ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    .content ul li ul li::before {
+      content: "➤";
+      color: #ff6600;
+      font-weight: bold;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    #dau {
+      font-size: 19px;
+      font-weight: bold;
+    }
+
+    #than {
+      font-size: 16.5px;
+    }
+
+    /* Style cho link Google Maps */
+    a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+    }
+    a:hover {
+      color: #ff6600;
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <h2 id="phanChao">Chào mừng bạn đã đến với cửa hàng Phú Hương</h2>
+  
+  <div class="content">
+    <h3>Thông tin cửa hàng</h3>
+    <ul>
+      <li><strong>Địa chỉ cửa hàng:</strong>
+        <ul>
+          <li>Chi nhánh 1: Cửa hàng Phú Hương chuyên bán xe điện Vinfast</li>
+          <li>Chi nhánh 2: Cửa hàng Phú Hương chuyên bán xe điện Yadea</li>
+          <li>Chi nhánh 3: Cửa hàng Phú Hương chuyên bán xe điện TAILG</li>
+        </ul>
+      </li>
+      <li><strong>Giờ mở cửa: </strong> 8h - 21h00 <strong>(Tất cả các ngày trong tuần)</strong></li>
+      <li><strong>Số điện thoại: </strong><a href="tel:0987654321">0987 654 321</a><strong> Zalo: </strong><a href="https://zalo.me/0949499004">Nhắn Zalo</a></li>
+    </ul>
+
+    <!-- Chi nhánh 1 -->
+    <p id="dau">1: Địa chỉ chi nhánh 1 nằm ở đâu?</p>
+    <p id="than">
+      <strong>- Nằm ở:</strong> Đray Bhăng, Cư Kuin, Đắk Lắk, Việt Nam
+      <a href="https://www.google.com/maps/place/C%E1%BB%ADa+H%C3%A0ng+%C4%90i%E1%BB%87n+M%C3%A1y+Ph%C3%BA+H%C6%B0%C6%A1ng+2/@12.5480041,108.1672255,17z/data=!4m6!3m5!1s0x3171f3a2b3808e51:0xf64889c5f8604e95!8m2!3d12.5481985!4d108.1694007!16s%2Fg%2F11fj6s944b?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Link Google Maps</a>
+    </p>
+
+    <!-- Chi nhánh 2 -->
+    <p id="dau">2: Địa chỉ chi nhánh 2 nằm ở đâu?</p>
+    <p id="than">
+      <strong>- Nằm ở:</strong> 169 QL27, Hoà Hiệp, Cư Kuin, Đắk Lắk, Việt Nam
+      <a href="https://www.google.com/maps/place/Yadea+Ph%C3%BA+H%C6%B0%C6%A1ng+Xe+M%C3%A1y+%C4%90i%E1%BB%87n+Th%C3%B4ng+Minh/@12.5479989,108.1698004,17z/data=!3m1!4b1!4m6!3m5!1s0x3171f33658157f5b:0xb5622d00aeb93c0a!8m2!3d12.5479989!4d108.1698004!16s%2Fg%2F11vqzxh4jk?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Link Google Maps</a>
+    </p>
+
+    <!-- Chi nhánh 3 -->
+    <p id="dau">3: Địa chỉ chi nhánh 3 nằm ở đâu?</p>
+    <p id="than">
+      <strong>- Nằm ở:</strong> Chợ Trung Hoà, Cư Kuin, Đắk Lắk, Việt Nam
+      <a href="https://www.google.com/maps/place/XE+%C4%90I%E1%BB%86N+PH%C3%9A+H%C6%AF%C6%A0NG/@12.6076315,108.1329664,17z/data=!3m1!4b1!4m6!3m5!1s0x3171f5ed6c43f44b:0xe11a4b5d0ae82f1a!8m2!3d12.6076315!4d108.1329664!16s%2Fg%2F11md4wcnzr?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Link Google Maps</a>
+    </p>
+  </div>
+</body>
+</html>
